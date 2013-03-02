@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>App</title>
+  <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+  <section id="header">
+    <h1>Fun with PhoneGap</h1>
+  </section>
+  <section id="body">
+    <div data-bind="text: msg"></div>
+    <ul data-bind="foreach: items">
+      <li><img data-bind="attr: { src: ImageUrl, alt: Name }" /> <div data-bind="text: Name"></div></li>
+    </ul>
+  </section>
+  <section id="footer">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </section>
+  <script src="js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="js/vendor/knockout-2.2.1.js"></script>
+  <script src="phonegap.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

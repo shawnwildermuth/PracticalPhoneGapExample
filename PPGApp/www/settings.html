@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>App</title>
+  <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+  <section id="header">
+    <h1>Settings</h1>
+  </section>
+  <section id="body">
+    <ul>
+      <li>
+        <input id="showLatestOnStartup" type="checkbox" data-bind="checked: showLatestOnStartup" />
+        <label for="showLatestOnStartup">Show Latest on Startup</label>
+      </li>
+      <li>
+        <input id="showOnlyMovies" type="checkbox" data-bind="checked: showOnlyMovies" />
+        <label for="showOnlyMovies">Show Only Movies</label></li>
+    </ul>
+  </section>
+  <section id="footer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Settings</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </section>
+  <script src="js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="js/vendor/knockout-2.2.1.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="phonegap.js"></script>
+
+</body>
+</html>

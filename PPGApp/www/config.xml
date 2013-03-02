@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.wilderminds.samplephonegap"
+        version="2.2.0">
+  <name>Sample Phone Gap</name>
+
+  <description>
+    This is an example phone gap project.
+  </description>
+
+  <author href="https://wilderminds.com"
+          email="support@wilderminds.com">
+    Wilder Minds LLC
+  </author>
+
+  <!-- Options -->
+  <preference name="orientation"
+              value="default" />
+  <preference name="fullscreen"
+              value="true" />
+  <preference name="phonegap-version"
+              value="2.2.0" />
+  <preference name="auto-hide-splash-screen"
+              value="true" />
+
+  <!-- iOS only -->
+  <!-- Handheld and Tablet -->
+  <preference name="target-device"
+              value="universal" />
+  <!-- Don't Bounce on stretch -->
+  <preference name="webviewbounce"
+              value="false" />
+  <!-- Show Startup Spinner -->
+  <preference name="show-splash-screen-spinner"
+              value="false" />
+  <!-- Don't Suspend -->
+  <preference name="exit-on-suspend"
+              value="false" />
+
+  <!-- Features (e.g. Permissions) -->
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <feature name="http://api.phonegap.com/1.0/notification" />
+
+  <!-- Icons -->
+  <icon src="icon.png" />
+  <!-- must be named this -->
+
+  <!-- iOS -->
+  <icon src="img/icons/ios/logo_57.png"
+        width="57"
+        height="57" />
+  <icon src="img/icons/ios/logo_72.png"
+        gap:platform="ios"
+        width="72"
+        height="72" />
+  <icon src="img/icons/ios/logo_114.png"
+        width="114"
+        height="114" />
+
+  <!-- Android -->
+  <icon src="img/icons/android/logo_36.png"
+        gap:platform="android"
+        gap:density="ldpi" />
+  <icon src="img/icons/android/logo_48.png"
+        gap:platform="android"
+        gap:density="mdpi" />
+  <icon src="img/icons/android/logo_72.png"
+        gap:platform="android"
+        gap:density="hdpi" />
+  <icon src="img/icons/android/logo_96.png"
+        gap:platform="android"
+        gap:density="xhdpi" />
+
+  <!-- WinPhone -->
+  <icon src="img/icons/wp8/logo.png"
+        gap:platform="winphone" />
+  <icon src="img/icons/wp8/tile.png"
+        gap:platform="winphone"
+        gap:role="background" />
+
+  <!-- Splash Screens -->
+  <gap:splash src="splash.png" />
+  <!-- must be named this -->
+  <gap:splash src="img/splash/android/ldpi.png"
+              gap:platform="android"
+              gap:density="ldpi" />
+  <gap:splash src="img/splash/android/mdpi.png"
+              gap:platform="android"
+              gap:density="mdpi" />
+  <gap:splash src="img/splash/android/hdpi.png"
+              gap:platform="android"
+              gap:density="hdpi" />
+  <gap:splash src="img/splash/android/xhdpi.png"
+              gap:platform="android"
+              gap:density="xhdpi" />
+
+  <!-- iOS Splash Screens-->
+  <gap:splash src="img/splash/ios/splash_320x480.png"
+              width="320"
+              height="480" />
+  <gap:splash src="img/splash/ios/splash_640x960.png"
+              width="640"
+              height="960" />
+  <gap:splash src="img/splash/ios/splash_640x1136.png"
+              width="640"
+              height="1136" />
+  <gap:splash src="img/splash/ios/splash_1024x768.png"
+              width="1024"
+              height="768" />
+  <gap:splash src="img/splash/ios/splash_768x1024.png"
+              width="768"
+              height="1024" />
+
+</widget>
