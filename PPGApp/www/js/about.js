@@ -1,17 +1,19 @@
 ﻿// about.js
 (function (about, $) {
  
+
   about.vm = {
-    about: ko.observable(""),
+    geoInfo: ko.observable(""),
     getGeoInfo: function () {
+      about.vm.geoInfo("Getting Geolocation Info");
       navigator.geolocation.getCurrentPosition(
         // Success
         function (loc) {
-          about.vm.about(loc.latitude + "x" + loc.longitude + " (Alt: " + loc.altitude + ")");
+          about.vm.geoInfo(loc.latitude + "x" + loc.longitude + " (Alt: " + loc.altitude + ")");
         },
         // Error
         function (err) {
-          about.vm.about("Failed to get position");
+          about.vm.geoInfo("Failed to get position");
         },
         // Options
         { enableHighAccuracy: true });
