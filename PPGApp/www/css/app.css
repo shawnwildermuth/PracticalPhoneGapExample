@@ -56,7 +56,9 @@
   border: 1px solid #83b0cd;
 }
 #footer {
+  position: fixed;
   height: 40px;
+  bottom: 0px;
   width: 100%;
 }
 #footer ul li {

@@ -2,10 +2,10 @@
 (function (app, $) {
  
   // Shared Functionality
-  var $footer = $("#footer");
-  $(document).on('scroll', function changeFooterPosition() {
-    $footer.css('top', window.innerHeight + window.scrollY - 40 + "px");
-  });
+  //var $footer = $("#footer");
+  //$(document).on('scroll', function changeFooterPosition() {
+  //  $footer.css('top', window.innerHeight + window.scrollY - 40 + "px");
+  //});
 
 
   // Initialization
