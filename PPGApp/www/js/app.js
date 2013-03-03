@@ -2,7 +2,7 @@
 (function (app, $) {
  
   if (window.cordova) {
-    var url = "http://localhost/api/1/find/recent";
+    var url = "http://howtowat.ch/api/1/find/recent";
   } else {
     var url = "http://localhost:8888/recent.js";
   }
@@ -21,7 +21,7 @@
         app.vm.msg("found: " + app.vm.items().length);
       })
       .fail(function (error) {
-        app.vm.msg("failed!");
+        app.vm.msg("failed: " + error);
       });
 
     }
