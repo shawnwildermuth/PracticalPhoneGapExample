@@ -6,8 +6,8 @@
     showLatestOnStartup: ko.observable(true)
   };
 
-  $(document).ready(function () {
+  settings.index = function () {
     ko.applyBindings(settings.vm);
-  });
+  };
 
 })(window.settings = window.settings || {}, $);

@@ -60,7 +60,17 @@
     <Content Include="packages.config" />
     <Content Include="www\about.html" />
     <Content Include="www\config.xml" />
+    <Content Include="www\js\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="www\js\index.js" />
+    <Content Include="www\js\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
     <Content Include="www\js\settings.js" />
+    <Content Include="www\js\settings.min.js">
+      <DependentUpon>settings.js</DependentUpon>
+    </Content>
     <Content Include="www\settings.html" />
     <Content Include="www\css\app.css">
       <DependentUpon>app.less</DependentUpon>
