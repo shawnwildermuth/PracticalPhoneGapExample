@@ -41,7 +41,8 @@
   <!-- Features (e.g. Permissions) -->
   <feature name="http://api.phonegap.com/1.0/network" />
   <feature name="http://api.phonegap.com/1.0/notification" />
-
+  <feature name="http://api.phonegap.com/1.0/geolocation" />
+  
   <!-- Icons -->
   <icon src="icon.png" />
   <!-- must be named this -->
