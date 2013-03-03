@@ -20,7 +20,7 @@
     }
   };
 
-  about.index = function () {
+  about.init = function () {
     ko.applyBindings(about.vm);
     about.vm.getGeoInfo();
   };
