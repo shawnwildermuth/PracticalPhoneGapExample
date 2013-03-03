@@ -8,8 +8,9 @@
       about.vm.geoInfo("Getting Geolocation Info");
       navigator.geolocation.getCurrentPosition(
         // Success
-        function (loc) {
-          about.vm.geoInfo(loc.latitude + "x" + loc.longitude + " (Alt: " + loc.altitude + ")");
+        function (data) {
+          var loc = data.coords;
+          about.vm.geoInfo(loc.latitude + " x " + loc.longitude + " (Alt: " + loc.altitude + ")");
         },
         // Error
         function (err) {
