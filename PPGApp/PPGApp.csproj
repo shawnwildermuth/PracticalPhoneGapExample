@@ -60,9 +60,13 @@
     <Content Include="packages.config" />
     <Content Include="www\about.html" />
     <Content Include="www\config.xml" />
+    <Content Include="www\js\about.min.js">
+      <DependentUpon>about.js</DependentUpon>
+    </Content>
     <Content Include="www\js\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
+    <Content Include="www\js\about.js" />
     <Content Include="www\js\index.js" />
     <Content Include="www\js\index.min.js">
       <DependentUpon>index.js</DependentUpon>

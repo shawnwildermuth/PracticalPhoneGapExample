@@ -6,7 +6,7 @@
     showLatestOnStartup: ko.observable(true)
   };
 
-  settings.index = function () {
+  settings.init = function () {
     ko.applyBindings(settings.vm);
   };
 
