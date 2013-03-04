@@ -3,7 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <title>App</title>
-  <link href="css/app.css" rel="stylesheet" />
+  <link href="css/app.min.css" rel="stylesheet" />
+  <link href="css/app.responsive.min.css" rel="stylesheet" />
 </head>
 <body>
   <section id="header">
@@ -12,7 +13,7 @@
   <section id="body">
     <div data-bind="text: msg"></div>
     <ul data-bind="foreach: items">
-      <li><img data-bind="attr: { src: ImageUrl, alt: Name }" /> <div data-bind="text: Name"></div></li>
+      <li><img data-bind="attr: { src: ImageUrl, alt: Name }" /> <div class="title" data-bind="text: Name"></div></li>
     </ul>
   </section>
   <section id="footer">

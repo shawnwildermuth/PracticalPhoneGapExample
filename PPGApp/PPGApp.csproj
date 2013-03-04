@@ -59,7 +59,27 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="www\about.html" />
-    <Content Include="www\config.xml" />
+    <Content Include="www\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="www\css\app.responsive.css">
+      <DependentUpon>app.responsive.less</DependentUpon>
+    </Content>
+    <Content Include="www\css\app.responsive.min.css">
+      <DependentUpon>app.responsive.less</DependentUpon>
+    </Content>
+    <Content Include="www\css\colors.css">
+      <DependentUpon>colors.less</DependentUpon>
+    </Content>
+    <Content Include="www\css\colors.min.css">
+      <DependentUpon>colors.less</DependentUpon>
+    </Content>
+    <Content Include="www\css\fonts.css">
+      <DependentUpon>fonts.less</DependentUpon>
+    </Content>
+    <Content Include="www\css\fonts.min.css">
+      <DependentUpon>fonts.less</DependentUpon>
+    </Content>
     <Content Include="www\js\about.min.js">
       <DependentUpon>about.js</DependentUpon>
     </Content>
@@ -93,6 +113,9 @@
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="www\css\app.less" />
+    <None Include="www\css\app.responsive.less" />
+    <Content Include="www\css\fonts.less" />
+    <Content Include="www\css\colors.less" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
