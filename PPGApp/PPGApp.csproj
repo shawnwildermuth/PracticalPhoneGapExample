@@ -95,7 +95,8 @@
     <Content Include="www\js\settings.min.js">
       <DependentUpon>settings.js</DependentUpon>
     </Content>
-    <Content Include="www\js\vendor\jquery-1.8.3.min.js" />
+    <Content Include="www\js\vendor\zepto.js" />
+    <Content Include="www\js\vendor\zepto.min.js" />
     <Content Include="www\settings.html" />
     <Content Include="www\css\app.css">
       <DependentUpon>app.less</DependentUpon>
@@ -106,7 +107,7 @@
     <Content Include="www\index.html" />
     <Content Include="www\js\app.js" />
     <Content Include="www\js\vendor\knockout-2.2.1.js" />
-    <Content Include="recent.js" />
+    <None Include="recent.json" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -140,9 +141,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>45625</DevelopmentServerPort>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8888</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:8888/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
