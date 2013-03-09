@@ -95,8 +95,10 @@
     <Content Include="www\js\settings.min.js">
       <DependentUpon>settings.js</DependentUpon>
     </Content>
-    <Content Include="www\js\vendor\zepto.js" />
-    <Content Include="www\js\vendor\zepto.min.js" />
+    <Content Include="www\js\vendor\jquery-2.0.0b2.js" />
+    <Content Include="www\js\vendor\jquery-2.0.0b2.min.js">
+      <DependentUpon>jquery-2.0.0b2.js</DependentUpon>
+    </Content>
     <Content Include="www\settings.html" />
     <Content Include="www\css\app.css">
       <DependentUpon>app.less</DependentUpon>
