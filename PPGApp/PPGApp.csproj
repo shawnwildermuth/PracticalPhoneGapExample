@@ -80,6 +80,7 @@
     <Content Include="www\css\fonts.min.css">
       <DependentUpon>fonts.less</DependentUpon>
     </Content>
+    <Content Include="www\img\gear.png" />
     <Content Include="www\js\about.min.js">
       <DependentUpon>about.js</DependentUpon>
     </Content>

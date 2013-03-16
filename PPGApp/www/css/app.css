@@ -24,6 +24,10 @@
   font-size: 18px;
   text-align: center;
 }
+#header .header-button {
+  float: right;
+  margin-top: 5px;
+}
 .title {
   vertical-align: top;
 }
@@ -37,7 +41,6 @@
   padding-left: 10px;
 }
 #body ul li img {
-  margin-top: 4px;
   padding: 2px;
   border: 1px solid #668496;
   max-width: 50px;
@@ -79,7 +82,7 @@
   background: -ms-linear-gradient(top, #28343b 0%, #828c95 64%, #b5bdc8 100%);
   background: linear-gradient(to bottom, #28343b 0%, #828c95 64%, #b5bdc8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28343b', endColorstr='#b5bdc8', GradientType=0);
-  width: 33%;
+  width: 50%;
   text-align: center;
   display: inline-block;
   list-style-type: none;

@@ -6,6 +6,10 @@
     if (window.index) index.init();
     if (window.settings) settings.init();
     if (window.about) about.init();
+
+    $(".back-button").on("click", function (e) {
+      window.history.go(-1);
+    });
   }
 
   // Startup (so you can test outside the browser)
