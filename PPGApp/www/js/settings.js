@@ -7,7 +7,7 @@
   };
 
   settings.init = function () {
-    ko.applyBindings(settings.vm);
+    ko.applyBindings(settings.vm, $("#settings-page")[0]);
   };
 
 })(window.settings = window.settings || {}, $);

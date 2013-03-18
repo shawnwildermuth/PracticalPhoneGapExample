@@ -1,11 +1,7 @@
 ﻿// init.js
 (function (index, $) {
 
-  if (window.cordova) {
-    var url = "http://howtowat.ch/api/1/find/recent";
-  } else {
-    var url = "http://localhost:8888/recent.json";
-  }
+  var url = "recent.txt";
 
   index.vm = {
     items: ko.observableArray([]),
@@ -31,19 +27,8 @@
   };
 
   index.init = function () {
-    ko.applyBindings(index.vm);
-    var canGetRecent = true;
-    if (window.cordova && navigator.connection)
-    {
-      // Check connection first
-      if (navigator.connection.type && navigator.connection.type === Connection.NONE)
-      {
-        // Cancel get recent and set the text that there isn't a connection
-        canGetRecent = false;
-        vm.index.msg("No Connection Available");
-      }
-    }
-    if (canGetRecent) index.vm.getRecent();
+    ko.applyBindings(index.vm, $("#index-page")[0]);
+    index.vm.getRecent();
   };
 
 })(window.index = window.index || {}, $);

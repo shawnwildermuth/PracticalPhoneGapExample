@@ -1,7 +1,5 @@
 ﻿// about.js
 (function (about, $) {
- 
-
 
   about.init = function () {
   };

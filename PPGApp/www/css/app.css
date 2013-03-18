@@ -31,23 +31,28 @@
 .title {
   vertical-align: top;
 }
-#body {
+.body {
   margin: 40px 0;
   color: #28343b;
 }
-#body ul li {
+.body ul li {
   border-bottom: 1px solid #668496;
   min-height: 40px;
   padding-left: 10px;
 }
-#body ul li img {
+.body ul li img {
+  margin-top: 4px;
   padding: 2px;
   border: 1px solid #668496;
   max-width: 50px;
   display: inline;
 }
-#body ul li div {
+.body ul li div {
   display: inline;
+}
+.hide 
+{
+  display:  none;
 }
 .back-button {
   float: left;

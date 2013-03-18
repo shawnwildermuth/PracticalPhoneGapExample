@@ -1,33 +1,46 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>App</title>
-  <link href="css/app.min.css" rel="stylesheet" />
-  <link href="css/app.responsive.min.css" rel="stylesheet" />
-</head>
-<body>
-  <section id="header">
-    <a href="about.html" class="header-button"><img src="img/gear.png" alt="about" /></a>
-    <h1>Fun with PhoneGap</h1> 
-  </section>
-  <section id="body">
-    <div data-bind="text: msg"></div>
-    <ul data-bind="foreach: items">
-      <li><img data-bind="attr: { src: ImageUrl, alt: Name }" /> <div class="title" data-bind="text: Name"></div></li>
-    </ul>
-  </section>
-  <section id="footer">
-    <ul>
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="settings.html">Settings</a></li>
-    </ul>
-  </section>
-  <script src="js/vendor/jquery-2.0.0b2.min.js"></script>
-  <script src="js/vendor/knockout-2.2.1.js"></script>
-  <script src="phonegap.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>App</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/app.responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="about.html" class="header-button"><img src="img/gear.png" alt="about" /></a>
+      <h1>Fun with PhoneGap</h1>
+    </section>
+    <section id="index-page" class="body">
+      <div data-bind="text: msg"></div>
+      <ul data-bind="foreach: items">
+        <li><img data-bind="attr: { src: ImageUrl, alt: Name }" /> <div class="title" data-bind="text: Name"></div></li>
+      </ul>
+    </section>
+    <section id="settings-page" class="body hide">
+      <ul>
+        <li>
+          <input id="showLatestOnStartup" type="checkbox" data-bind="checked: showLatestOnStartup" />
+          <label for="showLatestOnStartup">Show Latest on Startup</label>
+        </li>
+        <li>
+          <input id="showOnlyMovies" type="checkbox" data-bind="checked: showOnlyMovies" />
+          <label for="showOnlyMovies">Show Only Movies</label></li>
+      </ul>
+    </section>
+    <section id="footer">
+      <ul>
+        <li class="active"><a href="#/">Home</a></li>
+        <li><a href="#/settings">Settings</a></li>
+      </ul>
+    </section>
+    <script src="js/vendor/jquery-2.0.0b2.min.js"></script>
+    <script src="js/vendor/knockout-2.2.1.js"></script>
+    <script src="js/vendor/sammy.0.7.4.min.js"></script>
 
-  <script src="js/app.min.js"></script>
-  <script src="js/index.min.js"></script>
-</body>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/router.js"></script>
+  </body>
 </html>
